@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15146E3120A8FF42008159FA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15146E3020A8FF42008159FA /* CategoryCell.swift */; };
 		15E7F4F320A7F1C500B3AB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */; };
-		15E7F4F520A7F1C500B3AB3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F420A7F1C500B3AB3D /* ViewController.swift */; };
+		15E7F4F520A7F1C500B3AB3D /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */; };
 		15E7F4F820A7F1C500B3AB3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F4F620A7F1C500B3AB3D /* Main.storyboard */; };
 		15E7F4FA20A7F1C700B3AB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F4F920A7F1C700B3AB3D /* Assets.xcassets */; };
 		15E7F4FD20A7F1C700B3AB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F4FB20A7F1C700B3AB3D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15146E3020A8FF42008159FA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		15E7F4EF20A7F1C500B3AB3D /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15E7F4F420A7F1C500B3AB3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		15E7F4F720A7F1C500B3AB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15E7F4F920A7F1C700B3AB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15E7F4FC20A7F1C700B3AB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15146E2D20A8FEC0008159FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		15146E2E20A8FED8008159FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15146E2F20A8FF01008159FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15146E3020A8FF42008159FA /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		15E7F4E620A7F1C500B3AB3D = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +79,10 @@
 		15E7F4F120A7F1C500B3AB3D /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				15146E2F20A8FF01008159FA /* View */,
+				15146E2E20A8FED8008159FA /* Model */,
+				15146E2D20A8FEC0008159FA /* Controller */,
 				15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */,
-				15E7F4F420A7F1C500B3AB3D /* ViewController.swift */,
 				15E7F4F620A7F1C500B3AB3D /* Main.storyboard */,
 				15E7F4F920A7F1C700B3AB3D /* Assets.xcassets */,
 				15E7F4FB20A7F1C700B3AB3D /* LaunchScreen.storyboard */,
@@ -135,8 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E7F4F520A7F1C500B3AB3D /* ViewController.swift in Sources */,
+				15E7F4F520A7F1C500B3AB3D /* CategoriesVC.swift in Sources */,
 				15E7F4F320A7F1C500B3AB3D /* AppDelegate.swift in Sources */,
+				15146E3120A8FF42008159FA /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
