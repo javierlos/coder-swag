@@ -8,24 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		15E7F4F320A7F1C500B3AB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */; };
-		15E7F4F520A7F1C500B3AB3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F420A7F1C500B3AB3D /* ViewController.swift */; };
+		15E7F4F520A7F1C500B3AB3D /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */; };
 		15E7F4F820A7F1C500B3AB3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F4F620A7F1C500B3AB3D /* Main.storyboard */; };
 		15E7F4FA20A7F1C700B3AB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F4F920A7F1C700B3AB3D /* Assets.xcassets */; };
 		15E7F4FD20A7F1C700B3AB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F4FB20A7F1C700B3AB3D /* LaunchScreen.storyboard */; };
+		15E7F50B20A7F4CF00B3AB3D /* coder_swagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F50A20A7F4CF00B3AB3D /* coder_swagTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15E7F50D20A7F4CF00B3AB3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E7F4E720A7F1C500B3AB3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E7F4EE20A7F1C500B3AB3D;
+			remoteInfo = "coder-swag";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		15E7F4EF20A7F1C500B3AB3D /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15E7F4F420A7F1C500B3AB3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		15E7F4F720A7F1C500B3AB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15E7F4F920A7F1C700B3AB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15E7F4FC20A7F1C700B3AB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15E7F4FE20A7F1C700B3AB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E7F50820A7F4CE00B3AB3D /* coder-swagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coder-swagTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E7F50A20A7F4CF00B3AB3D /* coder_swagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coder_swagTests.swift; sourceTree = "<group>"; };
+		15E7F50C20A7F4CF00B3AB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		15E7F4EC20A7F1C500B3AB3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E7F50520A7F4CE00B3AB3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				15E7F4F120A7F1C500B3AB3D /* coder-swag */,
+				15E7F50920A7F4CE00B3AB3D /* coder-swagTests */,
 				15E7F4F020A7F1C500B3AB3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				15E7F4EF20A7F1C500B3AB3D /* coder-swag.app */,
+				15E7F50820A7F4CE00B3AB3D /* coder-swagTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +78,22 @@
 			isa = PBXGroup;
 			children = (
 				15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */,
-				15E7F4F420A7F1C500B3AB3D /* ViewController.swift */,
+				15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */,
 				15E7F4F620A7F1C500B3AB3D /* Main.storyboard */,
 				15E7F4F920A7F1C700B3AB3D /* Assets.xcassets */,
 				15E7F4FB20A7F1C700B3AB3D /* LaunchScreen.storyboard */,
 				15E7F4FE20A7F1C700B3AB3D /* Info.plist */,
 			);
 			path = "coder-swag";
+			sourceTree = "<group>";
+		};
+		15E7F50920A7F4CE00B3AB3D /* coder-swagTests */ = {
+			isa = PBXGroup;
+			children = (
+				15E7F50A20A7F4CF00B3AB3D /* coder_swagTests.swift */,
+				15E7F50C20A7F4CF00B3AB3D /* Info.plist */,
+			);
+			path = "coder-swagTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = 15E7F4EF20A7F1C500B3AB3D /* coder-swag.app */;
 			productType = "com.apple.product-type.application";
 		};
+		15E7F50720A7F4CE00B3AB3D /* coder-swagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E7F50F20A7F4CF00B3AB3D /* Build configuration list for PBXNativeTarget "coder-swagTests" */;
+			buildPhases = (
+				15E7F50420A7F4CE00B3AB3D /* Sources */,
+				15E7F50520A7F4CE00B3AB3D /* Frameworks */,
+				15E7F50620A7F4CE00B3AB3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15E7F50E20A7F4CF00B3AB3D /* PBXTargetDependency */,
+			);
+			name = "coder-swagTests";
+			productName = "coder-swagTests";
+			productReference = 15E7F50820A7F4CE00B3AB3D /* coder-swagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					15E7F4EE20A7F1C500B3AB3D = {
 						CreatedOnToolsVersion = 9.3.1;
+					};
+					15E7F50720A7F4CE00B3AB3D = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 15E7F4EE20A7F1C500B3AB3D;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				15E7F4EE20A7F1C500B3AB3D /* coder-swag */,
+				15E7F50720A7F4CE00B3AB3D /* coder-swagTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15E7F50620A7F4CE00B3AB3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,12 +197,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E7F4F520A7F1C500B3AB3D /* ViewController.swift in Sources */,
+				15E7F4F520A7F1C500B3AB3D /* CategoriesVC.swift in Sources */,
 				15E7F4F320A7F1C500B3AB3D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15E7F50420A7F4CE00B3AB3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E7F50B20A7F4CF00B3AB3D /* coder_swagTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15E7F50E20A7F4CF00B3AB3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E7F4EE20A7F1C500B3AB3D /* coder-swag */;
+			targetProxy = 15E7F50D20A7F4CF00B3AB3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		15E7F4F620A7F1C500B3AB3D /* Main.storyboard */ = {
@@ -312,6 +390,46 @@
 			};
 			name = Release;
 		};
+		15E7F51020A7F4CF00B3AB3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29UFY48EX6;
+				INFOPLIST_FILE = "coder-swagTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javiersalgadovaldes.coder-swagTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coder-swag.app/coder-swag";
+			};
+			name = Debug;
+		};
+		15E7F51120A7F4CF00B3AB3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29UFY48EX6;
+				INFOPLIST_FILE = "coder-swagTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javiersalgadovaldes.coder-swagTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coder-swag.app/coder-swag";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +447,15 @@
 			buildConfigurations = (
 				15E7F50220A7F1C700B3AB3D /* Debug */,
 				15E7F50320A7F1C700B3AB3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E7F50F20A7F4CF00B3AB3D /* Build configuration list for PBXNativeTarget "coder-swagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E7F51020A7F4CF00B3AB3D /* Debug */,
+				15E7F51120A7F4CF00B3AB3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
