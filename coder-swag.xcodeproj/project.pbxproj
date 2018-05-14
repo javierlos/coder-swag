@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		15146E3120A8FF42008159FA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15146E3020A8FF42008159FA /* CategoryCell.swift */; };
+		15146E3320A90334008159FA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15146E3220A90334008159FA /* Category.swift */; };
+		15146E3620A904B7008159FA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15146E3520A904B7008159FA /* DataService.swift */; };
+		15146E3820A914CE008159FA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15146E3720A914CE008159FA /* ProductCell.swift */; };
 		15E7F4F320A7F1C500B3AB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */; };
 		15E7F4F520A7F1C500B3AB3D /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */; };
 		15E7F4F820A7F1C500B3AB3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F4F620A7F1C500B3AB3D /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		15146E3020A8FF42008159FA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		15146E3220A90334008159FA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		15146E3520A904B7008159FA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		15146E3720A914CE008159FA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		15E7F4EF20A7F1C500B3AB3D /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E7F4F220A7F1C500B3AB3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E7F4F420A7F1C500B3AB3D /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -48,6 +54,7 @@
 		15146E2E20A8FED8008159FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15146E3220A90334008159FA /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -56,8 +63,17 @@
 			isa = PBXGroup;
 			children = (
 				15146E3020A8FF42008159FA /* CategoryCell.swift */,
+				15146E3720A914CE008159FA /* ProductCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		15146E3420A904A3008159FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				15146E3520A904B7008159FA /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		15E7F4E620A7F1C500B3AB3D = {
@@ -79,6 +95,7 @@
 		15E7F4F120A7F1C500B3AB3D /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				15146E3420A904A3008159FA /* Services */,
 				15146E2F20A8FF01008159FA /* View */,
 				15146E2E20A8FED8008159FA /* Model */,
 				15146E2D20A8FEC0008159FA /* Controller */,
@@ -165,6 +182,9 @@
 				15E7F4F520A7F1C500B3AB3D /* CategoriesVC.swift in Sources */,
 				15E7F4F320A7F1C500B3AB3D /* AppDelegate.swift in Sources */,
 				15146E3120A8FF42008159FA /* CategoryCell.swift in Sources */,
+				15146E3820A914CE008159FA /* ProductCell.swift in Sources */,
+				15146E3320A90334008159FA /* Category.swift in Sources */,
+				15146E3620A904B7008159FA /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29UFY48EX6;
 				INFOPLIST_FILE = "coder-swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "javiersalgadovaldes.coder-swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29UFY48EX6;
 				INFOPLIST_FILE = "coder-swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "javiersalgadovaldes.coder-swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
